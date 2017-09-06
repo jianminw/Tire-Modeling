@@ -42,10 +42,10 @@ function coEff = Slip_Ratio_Modeling(DR25)
         tempData.slipAngle = mean(slipAngle);
         tempData.force = mean(force);
                 
-        tempdata.overturning = max(abs(overturning));
-        disp(tempdata.overturning);
-        disp(tempdata.aligning);
-        tempdata.aligning = max(abs(aligning));
+        tempData.overturning = max(abs(overturning));
+        disp(tempData.overturning);
+        tempData.aligning = max(abs(aligning));
+        disp(tempData.aligning);
         
         p = round((mean(pressure) - 8) / 2); %results: 0, 1, 2, 3
         c = round(mean(camber) / 2); %results: 0, 1, 2
@@ -64,8 +64,8 @@ function coEff = Slip_Ratio_Modeling(DR25)
         % use 1 to 144 when testing
         if (p == 2 && c == 0 && s == 0)
             
-            hold all
-            force = -FZ(pos(i):5:pos(i+1));
+            %hold all
+            %force = -FZ(pos(i):5:pos(i+1));
             %scatter(force, dataY)
             %{
             disp( mean(force) )
