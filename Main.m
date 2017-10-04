@@ -27,9 +27,9 @@ DR25.pos = segment(DR25.IA, -1, length(DR25.P)+1, 1);
 
 %% Pacejka Fit
 
-%Slip_Angle_Modeling(CR25);
+Slip_Angle_Modeling(CR25);
 
-Slip_Ratio_Modeling(DR25);
+%Slip_Ratio_Modeling(DR25);
 
 end
 

@@ -43,9 +43,9 @@ function coEff = Slip_Ratio_Modeling(DR25)
         tempData.force = mean(force);
                 
         tempData.overturning = max(abs(overturning));
-        disp(tempData.overturning);
+        %disp(tempData.overturning);
         tempData.aligning = max(abs(aligning));
-        disp(tempData.aligning);
+        %disp(tempData.aligning);
         
         p = round((mean(pressure) - 8) / 2); %results: 0, 1, 2, 3
         c = round(mean(camber) / 2); %results: 0, 1, 2

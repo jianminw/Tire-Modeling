@@ -80,6 +80,16 @@ function coEff = Slip_Angle_Modeling(CR25)
         end
     end
     
+    for p = 0:3
+        for c = 0:4
+            for f = 0:4
+                index = p*25 + c*5 + f + 1;
+                temp = coEff(index).coeff;
+                disp(temp(4));
+            end
+        end
+    end
+    
     % just save the base coefficients
     save('SA_Pacejka_Coeffs.mat', 'coEff');
     
